@@ -39,7 +39,7 @@ const ModeSwitcher = styled.div`
 `;
 
 export const Header = () => {
-    const [localTheme, setLocalTheme] = useState(JSON.parse(localStorage.getItem('theme')) || '')
+    const [localTheme, setLocalTheme] = useState(JSON.parse(localStorage.getItem('theme')) || 'light')
     const dispatch = useDispatch()
     const cleanUp = () => dispatch(clearControls())
 
